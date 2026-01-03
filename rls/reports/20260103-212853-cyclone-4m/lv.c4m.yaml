@@ -1,0 +1,58 @@
+class: rls.rocket.BaseRocket
+args:
+  name: Cyclone 4M
+  cx_profile:
+    0.0: 0.16
+    0.7: 0.16
+    0.9: 0.22
+    1.0: 0.40
+    1.2: 0.48
+    1.5: 0.38
+    2.0: 0.30
+    3.0: 0.25
+    5.0: 0.20
+  max_q: 35_000 # Pa
+stages:
+# sources:
+# - https://en.wikipedia.org/wiki/Cyclone-4M
+# - https://web.archive.org/web/20180704195347/https://www.yuzhnoye.com/en/technique/launch-vehicles/rockets/cyclone-4m/
+# - https://www.russianspaceweb.com/tsyklon4m.html
+
+# Stage 1 — LOX/RP-1, 4 × RD-870
+- class: rls.rocket.BaseRocketStage
+  t: 0
+  args:
+    mass_dry: 35_900
+    mass_propellant: 224_800
+    impulse_spec_sea_level: 298
+    impulse_spec_vacuum: 332
+    thrust_sea_level: 3_130_000
+    thrust_vacuum: 3_498_000
+    height: 28.0
+    diameter: 3.90
+
+# Stage 2 — N2O4 / UDMH, RD-861K
+- class: rls.rocket.BaseRocketStage
+  t: 210
+  args:
+    mass_dry: 3_300
+    mass_propellant: 10_700
+    impulse_spec_sea_level: ~
+    impulse_spec_vacuum: 325
+    thrust_sea_level: 77_630
+    thrust_vacuum: 77_630
+    height: 8.5
+    diameter: 3.98
+
+# Payload (після вимкнення ДУ 2-го ступеня)
+- class: rls.rocket.BaseRocketStage
+  t: 640
+  args:
+    mass_dry: 3_000
+    mass_propellant: 0
+    impulse_spec_sea_level: 0
+    impulse_spec_vacuum: 0
+    thrust_sea_level: 0
+    thrust_vacuum: 0
+    height: 4.0
+    diameter: 4.0
