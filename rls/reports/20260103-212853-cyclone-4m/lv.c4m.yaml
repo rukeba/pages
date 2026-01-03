@@ -44,7 +44,7 @@ stages:
     height: 8.5
     diameter: 3.98
 
-# Payload (після вимкнення ДУ 2-го ступеня)
+# Payload (after 2nd stage engine shutdown)
 - class: rls.rocket.BaseRocketStage
   t: 640
   args:
