@@ -1,0 +1,40 @@
+---------------------------------------------------------------------------
+ MISSION ENERGETIC AUDIT: Cyclone 4M
+ TARGET ORBIT: 350.0 km
+---------------------------------------------------------------------------
+ Payload Mass (inc. Fairing) : 3,000.0 kg
+ Total Lift-off Mass (GLOW)  : 277,700.0 kg
+---------------------------------------------------------------------------
+ STAGE 1 (Avg (Atm+Vac) Isp)
+---------------------------------------------------------------------------
+ Ignition Mass      : 277,700.0 kg
+ Burnout Mass       : 52,900.0 kg
+ T/W (Start -> End) : 1.149 -> 6.743
+ Ideal Delta-V      : 5205 m/s
+---------------------------------------------------------------------------
+ STAGE 2 (Vacuum Isp)
+---------------------------------------------------------------------------
+ Ignition Mass      : 17,000.0 kg
+ Burnout Mass       : 6,300.0 kg
+ T/W (Start -> End) : 0.466 -> 1.257
+ Ideal Delta-V      : 3164 m/s
+---------------------------------------------------------------------------
+ ENERGETIC SUMMARY
+---------------------------------------------------------------------------
+ Required Orbital Speed     : 7701 m/s
+ Earth Rotation Bonus       : 0 m/s (Lat: 45.0, Az: 0.0)
+ Est. Flight Losses (g+d+s) : 1300 m/s
+ Total Budget Required      : 9001 m/s
+ Total Budget Available     : 8369 m/s
+ MISSION MARGIN             : -632 m/s [DEFICIT]
+---------------------------------------------------------------------------
+ STAGING & TRAJECTORY CONSTRAINTS
+---------------------------------------------------------------------------
+ Est. Relative Velocity at MECO : ~2500 m/s
+ Inertial Velocity at MECO      : ~2500 m/s (inc. Earth rot)
+ Stage 2 Required Velocity      : ~5601 m/s
+ Stage 2 Available Delta-V      : 3164 m/s
+
+ [!] WARNING: Stage 2 ignition T/W is low (0.466)
+     Trajectory angle MUST BE BELOW 27.8 deg to avoid velocity decay.
+     Steep climb will cause gravity to overpower thrust.
